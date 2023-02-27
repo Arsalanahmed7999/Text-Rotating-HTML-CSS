@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #100011;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, rgb(5, 0, 5), rgb(42, 0, 42));
+    font-size: 70px;
+    font-weight: bold;
+    box-shadow: 0 0 5px white, 0 0 10px black , 0 0 20px black, 0 0 40px black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+span{
+    font-family: serif;
+    color: white;
+    margin: 0 3px;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotateY(0deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+
+span:nth-child(1){
+    animation-delay: 0.1s;
+}
+span:nth-child(2){
+    animation-delay: 0.2s;
+}
+span:nth-child(3){
+    animation-delay: 0.3s;
+}
+span:nth-child(4){
+    animation-delay: 0.4s;
+}
+span:nth-child(5){
+    animation-delay: 0.5s;
+}
+
+button:hover{
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px violet;
+}
